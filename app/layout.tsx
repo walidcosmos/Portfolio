@@ -8,17 +8,19 @@ const inter = Inter({ subsets: ["latin"] });
 
 type RootLayoutProps = {
   children: ReactNode;
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 };
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
 }
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
-  params: { locale },
+  params,
 }: RootLayoutProps) {
+  const { locale } = await params;
+
   // Determine text direction based on locale
   const dir = locale === "ar" ? "rtl" : "ltr";
 
