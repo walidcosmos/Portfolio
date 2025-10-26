@@ -1,0 +1,110 @@
+{
+  "metadata": {
+    "title": "Walid - Desarrollador Full-Stack | React, Next.js, TypeScript",
+    "description": "Desarrollador full-stack creando aplicaciones web modernas con React, Next.js y TypeScript. Fundador de NeQra Academy, plataforma de aprendizaje en línea en árabe.",
+    "ogTitle": "Walid - Desarrollador Full-Stack",
+    "ogDescription": "Construyendo el futuro del aprendizaje en línea en árabe"
+  },
+  "nav": {
+    "about": "Acerca de",
+    "skills": "Habilidades",
+    "projects": "Proyectos",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "greeting": "Hola, soy Walid 👋",
+    "title": "Desarrollador Full-Stack Construyendo",
+    "highlight": "El Futuro del Aprendizaje en Línea en Árabe",
+    "cta1": "Ver Mi Trabajo",
+    "cta2": "Hablemos"
+  },
+  "about": {
+    "title": "Acerca de Mí",
+    "subtitle": "Una mezcla única de biotecnología, servicio al cliente y desarrollo full-stack",
+    "bio1": "Soy un desarrollador full-stack que programa en React de día y sueña en TypeScript de noche. Con una formación única en biotecnología y servicio al cliente multilingüe, aporto una combinación rara de precisión técnica y diseño centrado en el ser humano a cada proyecto que construyo.",
+    "bio2": "Cuando no estoy programando, investigo sobre la ciencia de la longevidad, desmiento mitos sobre salud o perfecciono mi técnica de preparación de café ☕",
+    "timeline": {
+      "item1": {
+        "title": "Investigador en Biotecnología",
+        "description": "Aprendí pensamiento sistémico y rigor científico"
+      },
+      "item2": {
+        "title": "Líder de Servicio al Cliente",
+        "description": "Dominé la empatía con el usuario en Bell Canada y Djezzy"
+      },
+      "item3": {
+        "title": "Desarrollador Autodidacta",
+        "description": "Construí aplicaciones de producción usadas por miles"
+      },
+      "item4": {
+        "title": "Fundador EdTech",
+        "description": "Actualmente lanzando NeQra Academy"
+      }
+    }
+  },
+  "skills": {
+    "title": "Habilidades y Tecnologías",
+    "subtitle": "Tecnologías con las que trabajo diariamente",
+    "categories": {
+      "all": "Todas",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "devops": "DevOps"
+    }
+  },
+  "projects": {
+    "title": "Proyectos Destacados",
+    "subtitle": "Aplicaciones del mundo real construidas con tecnologías modernas",
+    "neqra": {
+      "title": "NeQra Academy",
+      "description": "Plataforma de aprendizaje en árabe con más de 30 cursos de CSS, soporte RTL completo y puntuación Lighthouse de 95+"
+    },
+    "ecommerce": {
+      "title": "Plataforma de E-Commerce",
+      "description": "Tienda en línea full-stack con integración de pagos e inventario en tiempo real"
+    },
+    "taskManager": {
+      "title": "Aplicación de Gestión de Tareas",
+      "description": "Herramienta de gestión de proyectos colaborativa con interfaz de arrastrar y soltar"
+    },
+    "liveDemo": "Demo en Vivo",
+    "code": "Código",
+    "caseStudy": "Estudio de Caso"
+  },
+  "contact": {
+    "title": "Construyamos Algo Juntos",
+    "subtitle": "Ya sea que busques un desarrollador, un colaborador, o simplemente quieras charlar sobre tecnología y biotecnología tomando un café ☕ — me encantaría saber de ti.",
+    "form": {
+      "namePlaceholder": "Tu Nombre",
+      "emailPlaceholder": "tu.email@ejemplo.com",
+      "subjectPlaceholder": "Selecciona un asunto",
+      "messagePlaceholder": "Tu mensaje...",
+      "subjects": {
+        "job": "Oportunidad Laboral",
+        "collaboration": "Colaboración",
+        "hello": "Solo Saludando"
+      },
+      "submit": "Enviar Mensaje",
+      "sending": "Enviando...",
+      "success": "✓ ¡Mensaje enviado! Te responderé pronto."
+    },
+    "validation": {
+      "nameMin": "El nombre debe tener al menos 2 caracteres",
+      "emailInvalid": "Por favor ingresa un correo electrónico válido",
+      "subjectRequired": "Por favor selecciona un asunto",
+      "messageMin": "El mensaje debe tener al menos 10 caracteres"
+    }
+  },
+  "footer": {
+    "copyright": "© {year} Walid. Creado con Next.js y Tailwind CSS"
+  },
+  "theme": {
+    "toggle": "Cambiar tema",
+    "light": "Modo claro",
+    "dark": "Modo oscuro"
+  },
+  "language": {
+    "select": "Seleccionar idioma",
+    "current": "Idioma actual"
+  }
+}

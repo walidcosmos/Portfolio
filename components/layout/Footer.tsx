@@ -1,28 +1,32 @@
+"use client";
+
 import { Github, Linkedin, Mail, Twitter } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
+  const t = useTranslations("footer");
 
   const socialLinks = [
-    { 
-      icon: Github, 
-      href: "https://github.com/yourusername", 
-      label: "GitHub" 
+    {
+      icon: Github,
+      href: "https://github.com/yourusername",
+      label: "GitHub",
     },
     {
       icon: Linkedin,
       href: "https://linkedin.com/in/yourprofile",
       label: "LinkedIn",
     },
-    { 
-      icon: Twitter, 
-      href: "https://twitter.com/yourusername", 
-      label: "Twitter" 
+    {
+      icon: Twitter,
+      href: "https://twitter.com/yourusername",
+      label: "Twitter",
     },
-    { 
-      icon: Mail, 
-      href: "mailto:your.email@example.com", 
-      label: "Email" 
+    {
+      icon: Mail,
+      href: "mailto:your.email@example.com",
+      label: "Email",
     },
   ];
 
@@ -51,7 +55,7 @@ export default function Footer() {
 
           {/* Copyright */}
           <p className="text-muted-foreground text-sm text-center">
-            © {currentYear} Walid. Built with Next.js & Tailwind CSS
+            {t("copyright", { year: currentYear })}
           </p>
         </div>
       </div>

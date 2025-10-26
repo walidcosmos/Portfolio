@@ -1,0 +1,110 @@
+{
+  "metadata": {
+    "title": "Walid - Full-Stack Developer | React, Next.js, TypeScript",
+    "description": "Full-stack developer building modern web applications with React, Next.js, and TypeScript. Founder of NeQra Academy, Arabic e-learning platform.",
+    "ogTitle": "Walid - Full-Stack Developer",
+    "ogDescription": "Building the future of Arabic e-learning"
+  },
+  "nav": {
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hi, I'm Walid 👋",
+    "title": "Full-Stack Developer Building",
+    "highlight": "The Future of Arabic E-Learning",
+    "cta1": "View My Work",
+    "cta2": "Let's Talk"
+  },
+  "about": {
+    "title": "About Me",
+    "subtitle": "A unique blend of biotechnology, customer service, and full-stack development",
+    "bio1": "I'm a full-stack developer who codes in React by day and dreams in TypeScript by night. With a unique background in biotechnology and multilingual customer service, I bring a rare blend of technical precision and human-centered design to every project I build.",
+    "bio2": "When I'm not coding, I'm researching longevity science, debunking health myths, or perfecting my coffee brewing technique ☕",
+    "timeline": {
+      "item1": {
+        "title": "Biotechnology Researcher",
+        "description": "Learned systems thinking & scientific rigor"
+      },
+      "item2": {
+        "title": "Customer Service Lead",
+        "description": "Mastered user empathy at Bell Canada & Djezzy"
+      },
+      "item3": {
+        "title": "Self-Taught Developer",
+        "description": "Built production apps used by thousands"
+      },
+      "item4": {
+        "title": "EdTech Founder",
+        "description": "Currently launching NeQra Academy"
+      }
+    }
+  },
+  "skills": {
+    "title": "Skills & Technologies",
+    "subtitle": "Technologies I work with on a daily basis",
+    "categories": {
+      "all": "All",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "devops": "DevOps"
+    }
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "subtitle": "Real-world applications built with modern technologies",
+    "neqra": {
+      "title": "NeQra Academy",
+      "description": "Arabic e-learning platform with 30+ CSS courses, full RTL support, and 95+ Lighthouse score"
+    },
+    "ecommerce": {
+      "title": "E-Commerce Platform",
+      "description": "Full-stack online store with payment integration and real-time inventory"
+    },
+    "taskManager": {
+      "title": "Task Management App",
+      "description": "Collaborative project management tool with drag-and-drop interface"
+    },
+    "liveDemo": "Live Demo",
+    "code": "Code",
+    "caseStudy": "Case Study"
+  },
+  "contact": {
+    "title": "Let's Build Something Together",
+    "subtitle": "Whether you're looking for a developer, a collaborator, or just want to chat about tech and biotech over coffee ☕ — I'd love to hear from you.",
+    "form": {
+      "namePlaceholder": "Your Name",
+      "emailPlaceholder": "your.email@example.com",
+      "subjectPlaceholder": "Select a subject",
+      "messagePlaceholder": "Your message...",
+      "subjects": {
+        "job": "Job Opportunity",
+        "collaboration": "Collaboration",
+        "hello": "Just Saying Hi"
+      },
+      "submit": "Send Message",
+      "sending": "Sending...",
+      "success": "✓ Message sent! I'll get back to you soon."
+    },
+    "validation": {
+      "nameMin": "Name must be at least 2 characters",
+      "emailInvalid": "Please enter a valid email",
+      "subjectRequired": "Please select a subject",
+      "messageMin": "Message must be at least 10 characters"
+    }
+  },
+  "footer": {
+    "copyright": "© {year} Walid. Built with Next.js & Tailwind CSS"
+  },
+  "theme": {
+    "toggle": "Toggle theme",
+    "light": "Light mode",
+    "dark": "Dark mode"
+  },
+  "language": {
+    "select": "Select language",
+    "current": "Current language"
+  }
+}

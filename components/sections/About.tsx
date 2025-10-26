@@ -1,25 +1,28 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 import { Card } from "@/components/ui/Card";
 
 export default function About() {
+  const t = useTranslations("about");
+
   const timeline = [
     {
-      title: "Biotechnology Researcher",
-      description: "Learned systems thinking & scientific rigor",
+      title: t("timeline.item1.title"),
+      description: t("timeline.item1.description"),
     },
     {
-      title: "Customer Service Lead",
-      description: "Mastered user empathy at Bell Canada & Djezzy",
+      title: t("timeline.item2.title"),
+      description: t("timeline.item2.description"),
     },
     {
-      title: "Self-Taught Developer",
-      description: "Built production apps used by thousands",
+      title: t("timeline.item3.title"),
+      description: t("timeline.item3.description"),
     },
     {
-      title: "EdTech Founder",
-      description: "Currently launching NeQra Academy",
+      title: t("timeline.item4.title"),
+      description: t("timeline.item4.description"),
     },
   ];
 
@@ -33,26 +36,19 @@ export default function About() {
           transition={{ duration: 0.5 }}
         >
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">
-            About Me
+            {t("title")}
           </h2>
           <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-            A unique blend of biotechnology, customer service, and full-stack
-            development
+            {t("subtitle")}
           </p>
 
           {/* Bio */}
           <Card className="mb-12">
             <p className="text-lg leading-relaxed mb-6">
-              I&apos;m a full-stack developer who codes in React by day and dreams
-              in TypeScript by night. With a unique background in biotechnology
-              and multilingual customer service, I bring a rare blend of
-              technical precision and human-centered design to every project I
-              build.
+              {t("bio1")}
             </p>
             <p className="text-lg leading-relaxed text-muted-foreground">
-              When I&apos;m not coding, I&apos;m researching longevity science,
-              debunking health myths, or perfecting my coffee brewing technique
-              ☕
+              {t("bio2")}
             </p>
           </Card>
 

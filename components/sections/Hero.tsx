@@ -2,9 +2,12 @@
 
 import { motion } from "framer-motion";
 import { ArrowDown } from "lucide-react";
+import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/Button";
 
 export default function Hero() {
+  const t = useTranslations("hero");
+
   return (
     <section className="relative min-h-screen flex items-center justify-center px-4 pt-20">
       {/* Animated background */}
@@ -19,7 +22,7 @@ export default function Hero() {
           transition={{ duration: 0.5 }}
         >
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
-            Hi, I&apos;m Walid 👋
+            {t("greeting")}
           </h1>
         </motion.div>
 
@@ -29,9 +32,9 @@ export default function Hero() {
           transition={{ duration: 0.5, delay: 0.1 }}
           className="text-xl md:text-2xl text-muted-foreground mb-8"
         >
-          Full-Stack Developer Building{" "}
+          {t("title")}{" "}
           <span className="text-foreground font-semibold">
-            The Future of Arabic E-Learning
+            {t("highlight")}
           </span>
         </motion.p>
 
@@ -42,10 +45,10 @@ export default function Hero() {
           className="flex flex-wrap gap-4 justify-center mb-12"
         >
           <Button size="lg" href="#projects">
-            View My Work
+            {t("cta1")}
           </Button>
           <Button size="lg" variant="outline" href="#contact">
-            Let&apos;s Talk
+            {t("cta2")}
           </Button>
         </motion.div>
 

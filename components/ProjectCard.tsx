@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 import { ExternalLink, Github } from "lucide-react";
 
 interface ProjectCardProps {
@@ -24,6 +25,8 @@ export default function ProjectCard({
   githubUrl,
   slug,
 }: ProjectCardProps) {
+  const t = useTranslations("projects");
+
   return (
     <motion.div
       whileHover={{ y: -8 }}
@@ -69,10 +72,10 @@ export default function ProjectCard({
               className="flex items-center gap-2 text-sm text-primary hover:text-primary/80 transition-colors"
             >
               <ExternalLink className="w-4 h-4" />
-              Live Demo
+              {t("liveDemo")}
             </a>
           )}
-          
+
           {githubUrl && (
             <a
               href={githubUrl}
@@ -81,15 +84,15 @@ export default function ProjectCard({
               className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
             >
               <Github className="w-4 h-4" />
-              Code
+              {t("code")}
             </a>
           )}
-          
+
           <Link
             href={`/projects/${slug}`}
             className="ml-auto text-sm text-muted-foreground hover:text-foreground transition-colors"
           >
-            Case Study →
+            {t("caseStudy")} →
           </Link>
         </div>
       </div>

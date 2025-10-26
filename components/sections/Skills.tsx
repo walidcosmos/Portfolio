@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { useTranslations } from "next-intl";
 import { Card } from "@/components/ui/Card";
 
 const skills = [
@@ -23,15 +24,16 @@ const skills = [
 
 export default function Skills() {
   const [filter, setFilter] = useState("all");
+  const t = useTranslations("skills");
 
   const filteredSkills =
     filter === "all" ? skills : skills.filter((s) => s.category === filter);
 
   const categories = [
-    { id: "all", label: "All" },
-    { id: "frontend", label: "Frontend" },
-    { id: "backend", label: "Backend" },
-    { id: "devops", label: "DevOps" },
+    { id: "all", label: t("categories.all") },
+    { id: "frontend", label: t("categories.frontend") },
+    { id: "backend", label: t("categories.backend") },
+    { id: "devops", label: t("categories.devops") },
   ];
 
   return (
@@ -44,10 +46,10 @@ export default function Skills() {
           transition={{ duration: 0.5 }}
         >
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">
-            Skills & Technologies
+            {t("title")}
           </h2>
           <p className="text-center text-muted-foreground mb-12">
-            Technologies I work with on a daily basis
+            {t("subtitle")}
           </p>
 
           {/* Filter buttons */}
