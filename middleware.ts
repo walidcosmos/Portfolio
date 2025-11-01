@@ -8,18 +8,15 @@ export default createMiddleware({
   // Used when no locale matches
   defaultLocale,
 
-  // Don't add locale prefix to default locale
+  // Always show locale prefix for all routes
   localePrefix: "always",
 });
 
 export const config = {
-  // Match only internationalized pathnames
-  // Skip all paths that should not be internationalized (api routes, static files, etc.)
-  matcher: [
-    // Match all pathnames except for
-    // - … if they start with `/api`, `/_next` or `/_vercel`
-    // - … the ones containing a dot (e.g. `favicon.ico`)
-    "/",
-    "/((?!api|_next|_vercel|.*\\..*).*)",
-  ],
+  // Match all pathnames except for:
+  // - /api routes
+  // - /_next (Next.js internals)
+  // - /_vercel (Vercel internals)
+  // - Static files (e.g. /favicon.ico, /robots.txt)
+  matcher: ["/((?!api|_next|_vercel|.*\\..*).*)"],
 };
